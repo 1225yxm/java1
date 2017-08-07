@@ -17,7 +17,7 @@ public class ArrayHomework8 {
 			}
 		}
 		
-		for (int i : arr1) {
+		for (int i : arr1) { 
 			System.out.println(i);
 		}
 		
