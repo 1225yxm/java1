@@ -12,8 +12,8 @@ public class ArrayHomework3 {
 				arr3[i][j]=arr1[i][0]*arr2[0][j]+arr1[i][1]*arr2[1][j]+arr1[i][2]*arr2[2][j];
 			}
 		}
-		for(int i=0;i<2;i++) {
-			for (int j=0;j<4;j++) {
+		for(int i=0;i<arr3.length;i++) {
+			for (int j=0;j<arr3[i].length;j++) {
 				System.out.print(arr3[i][j]);
 				System.out.print('\t');
 			}

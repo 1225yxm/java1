@@ -5,6 +5,16 @@
 	<classpathentry kind="src" path="xunhuan"/>
 	<classpathentry kind="src" path="array"/>
 	<classpathentry kind="src" path="unit5function"/>
+	<classpathentry kind="src" path="MyArrayTools"/>
+	<classpathentry kind="src" path="类"/>
+	<classpathentry kind="src" path="kindhomework"/>
+	<classpathentry kind="src" path="kindhomework2"/>
+	<classpathentry kind="src" path="kindhomework3"/>
+	<classpathentry kind="src" path="kindhomework4"/>
+	<classpathentry kind="src" path="kindhomework5"/>
+	<classpathentry kind="src" path="kindhomework7"/>
+	<classpathentry kind="src" path="封装"/>
 	<classpathentry kind="lib" path="lib/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="lib/ArrayToolsForMe.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

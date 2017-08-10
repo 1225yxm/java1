@@ -13,7 +13,10 @@ public class ArrayHomework2 {
 			
 			System.out.println(arr2[i]);
 		}
+		
+			
+		}
 
 	}
 
-}
+
