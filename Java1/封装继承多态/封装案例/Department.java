@@ -5,12 +5,11 @@ public class Department {
 	private int performance;
 	private int numberofpeople;
 	private String task;
-	private Emp[ ]DEmps;
+	private static Emp[ ]DEmps;
 	
 	
-
 	
-	public Emp[] getDEmps() {
+	public static Emp[] getDEmps() {
 		return DEmps;
 	}
 	public void setDEmps(Emp[] dEmps) {

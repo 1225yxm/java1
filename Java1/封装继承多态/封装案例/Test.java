@@ -17,13 +17,11 @@ public class Test {
 		
 		Department d1=new Department();
 		d1.setDname("宣传部");
-		d1.setNumberofpeople(10);
 		d1.setPerformance(2);
 		d1.setTask(" 负责对公司进行宣传");
 		
 		Department d2=new Department();
 		d2.setDname("销售部");
-		d2.setNumberofpeople(15);
 		d2.setPerformance(1);
 		d2.setTask(" 负责公司产品的销售");
 		
@@ -74,13 +72,27 @@ public class Test {
 		Emp e4=new Emp();
 		e4.setPerson(p4);
 		e4.setCompany(c1);
-		e4.setDepartment(d1);
+		e4.setDepartment(d2);
 		e4.setSalary(5000);
 		e4.setPost("普通员工");
 		
+		
+		Person p5=new Person();
+		p5.setName("emp5");
+		p5.setSex("男");
+		p5.setAge(24);
+		p5.setTeliPhone("15735104149");
+		p5.setAdd("山西临汾");
+		Emp e5=new Emp();
+		e5.setPerson(p5);
+		e5.setCompany(c1);
+		e5.setDepartment(d2);
+		e5.setSalary(5000);
+		e5.setPost("普通员工");
+		
 		//构造下属
 		Emp[ ] emps= {e3,e4};
-	
+		
 		//人物关系
 		e2.setDowns(emps);
 		
@@ -89,7 +101,36 @@ public class Test {
 		//部门人数
 		Emp[ ] dEmps= {e2,e3,e4};
 		d1.setDEmps(dEmps);
+		System.out.println("原来的人数："+dEmps.length);
+		
+		for(int i=0;i<dEmps.length;i++) {
+			System.out.println(dEmps[i].getPerson().getName());
+		}
+		
+		//增加员工：
+		Emp[ ]emps1= {e5};
+		
+		
+		//输出现在员工的总人数：
+		Emp[ ] newdemp=Function.Addemp(dEmps,emps1);//newdemp接收增加员工后的数组；
+		System.out.println("增加e5后的人数："+newdemp.length);
+		for(int i=0;i<Function.Addemp(dEmps,emps1).length;i++) {
+			System.out.println(newdemp[i].getPerson().getName());
+		}
 
+		
+		
+		
+		//删除员工e3,e4：
+		Emp[ ]emps2= {e3,e4};
+		Emp[] removeemp=Function.remove(newdemp,emps2);//removeemp数组接收删除员工后的员工
+		System.out.println("删除e3、e4后的人数："+removeemp.length);
+		for(int i=0;i<removeemp.length;i++) {
+			System.out.println(removeemp[i].getPerson().getName());
+		}
+		
+		
+		
 		System.out.println("e2的所有信息："+"姓名："+e2.getPerson().getName()+"\n"
 															   +"年龄："+e2.getPerson().getAge()+"\n"
 															   +"性别："+e2.getPerson().getSex()+"\n"
@@ -101,7 +142,7 @@ public class Test {
 															   +"岗位："+e2.getPost()+"\n"
 															   +"部门职责："+e2.getDepartment().getTask()+"\n"
 															   +"部门业绩："+e2.getDepartment().getPerformance()+"\n"
-															   +"部门总人数："+e2.getDepartment().getNumberofpeople()+"\n"
+															   +"部门总人数："+Function.Addemp(dEmps,emps1).length+"\n"
 															   +"下属："+e2.getDowns()[1].getPerson().getName()+"\t\t"+e2.getDowns()[0].getPerson().getName());
 		
 		

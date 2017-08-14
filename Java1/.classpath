@@ -13,7 +13,8 @@
 	<classpathentry kind="src" path="kindhomework4"/>
 	<classpathentry kind="src" path="kindhomework5"/>
 	<classpathentry kind="src" path="kindhomework7"/>
-	<classpathentry kind="src" path="封装"/>
+	<classpathentry kind="src" path="封装继承多态"/>
+	<classpathentry kind="src" path="继承"/>
 	<classpathentry kind="lib" path="lib/commons-lang3-3.6.jar"/>
 	<classpathentry kind="lib" path="lib/ArrayToolsForMe.jar"/>
 	<classpathentry kind="output" path="bin"/>
