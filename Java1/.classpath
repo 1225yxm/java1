@@ -15,7 +15,18 @@
 	<classpathentry kind="src" path="kindhomework7"/>
 	<classpathentry kind="src" path="封装继承多态"/>
 	<classpathentry kind="src" path="继承"/>
+	<classpathentry kind="src" path="oop案例buycart"/>
+	<classpathentry kind="src" path="unit9"/>
+	<classpathentry kind="src" path="字符串"/>
+	<classpathentry kind="src" path="异常"/>
+	<classpathentry kind="src" path="集合"/>
+	<classpathentry kind="src" path="buycart改造"/>
+	<classpathentry kind="src" path="设计模式"/>
+	<classpathentry kind="src" path="IO"/>
 	<classpathentry kind="lib" path="lib/commons-lang3-3.6.jar"/>
 	<classpathentry kind="lib" path="lib/ArrayToolsForMe.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
