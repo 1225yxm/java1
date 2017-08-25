@@ -49,9 +49,9 @@ public class Login {
 			//判断账号密码
 			boolean bn=false,bm=false;
 			for (Customer ct2 : customers) {
-				if(ct2.getCardnumber().equals(carnb)) {
+				if(ct2.getCar().getCardnumber().equals(carnb)) {
 					bn=true;
-					if(ct2.getPassword().equals(carpw)) {
+					if(ct2.getCar().getPassword().equals(carpw)) {
 						if(check.equals(result.toString())) {
 							System.out.println("成功登录！");
 							cust=ct2;

@@ -1,15 +1,22 @@
 package bank.myprojectbank;
 
 public class Loan {
-	private Customer customer;
-	private double loanMoney;
-	private int month;
-	public Customer getCustomer() {
-		return customer;
+
+	private double loanMoney=0;
+	private int month=0;
+	
+	public Loan() {
+		
 	}
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
+
+	public Loan(double loanMoney, int month) {
+		super();
+		this.loanMoney = loanMoney;
+		this.month = month;
 	}
+
+
+
 	public double getLoanMoney() {
 		return loanMoney;
 	}

@@ -1,43 +1,35 @@
 package bank.myprojectbank;
 
-import java.math.BigDecimal;
-import java.text.MessageFormat;
-import java.text.NumberFormat;
-
 public class Customer {
 	private Person person;
-	private String cardnumber;
-	private String password;
-	
+	private Car car;
+	private Loan loan;
 	private  int credit=0;
-	
-	private double loanMoney;
-	private int month;
 
-	private double money=0;
-	
-	
 	public Customer() {
 	}
 
-	public Customer(Person person, String cardnumber, String password,int credit) {
+	public Customer(Person person, Car car, int credit) {
 		this.person = person;
-		this.cardnumber = cardnumber;
-		this.password = password;
+		this.car=car;
 		this.credit=credit;
 	}
 	
-	public double getLoanMoney() {
-		return loanMoney;
+	public Customer(Person person, Car car,Loan loan, int credit) {
+		this.person = person;
+		this.car=car;
+		this.loan=loan;
+		this.credit=credit;
 	}
-	public void setLoanMoney(double loanMoney) {
-		this.loanMoney = loanMoney;
+	
+	
+	
+	public Car getCar() {
+		return car;
 	}
-	public int getMonth() {
-		return month;
-	}
-	public void setMonth(int month) {
-		this.month = month;
+
+	public void setCar(Car car) {
+		this.car = car;
 	}
 
 	public int getCredit() {
@@ -56,48 +48,23 @@ public class Customer {
 		this.person = person;
 	}
 
-	public String getCardnumber() {
-		return cardnumber;
+	public Loan getLoan() {
+		return loan;
 	}
 
-	public void setCardnumber(String cardnumber) {
-		this.cardnumber = cardnumber;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public double getMoney() {
-		return money;
-	}
-
-	public void setMoney(double money) {
-		this.money = money;
+	public void setLoan(Loan loan) {
+		this.loan = loan;
 	}
 
 	@Override
 	public String toString() {
-		BigDecimal mon=new BigDecimal(money);
-		return MessageFormat.format(  "name : {0} \t\tcardnumber: {1}\t\tmoney : {2}" , person.getName() , cardnumber , mon.setScale(3,BigDecimal.ROUND_CEILING));
+		return "Customer [person=" + person + ", car=" + car + "]";
 	}
 
 
-	@Override
-	public boolean equals(Object obj) {
-		Customer customer1 = this;
-		Customer customer2 = (Customer) obj;
-		
-		if (customer1.getCardnumber() == customer2.getCardnumber()) {
-			return true;
-		} else {
-			return false;
-		}
-		
-	}
+
+
+
+	
 
 }
